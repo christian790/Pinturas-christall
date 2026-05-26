@@ -107,6 +107,7 @@ section { padding: 80px 5%; }
 .product-card.hidden { display: none !important; }
 .product-img { height: 190px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
 .product-img img { width: 75%; height: 75%; object-fit: contain; display: block; }
+.product-img img.img-lg { width: 92%; height: 92%; }
 .product-accent { position: absolute; bottom: 0; left: 0; right: 0; height: 4px; }
 .product-body { padding: 18px; display: flex; flex-direction: column; flex: 1; }
 .product-name { font-weight: 800; font-size: 15px; margin-bottom: 6px; }
@@ -129,8 +130,8 @@ section { padding: 80px 5%; }
 .modal-product-name { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 1px; color: var(--blue); margin-bottom: 2px; }
 .modal-product-sub { font-size: 13px; color: var(--muted); }
 .modal-label { font-weight: 800; font-size: 13px; margin-bottom: 10px; display: block; letter-spacing: .3px; }
-.size-options { display: flex; gap: 10px; margin-bottom: 22px; }
-.size-btn { flex: 1; padding: 12px 8px; border-radius: 12px; border: 2px solid #e5e7eb; background: var(--white); cursor: pointer; text-align: center; transition: all .2s; font-family: 'Nunito', sans-serif; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.size-options { display: flex; gap: 10px; margin-bottom: 22px; flex-wrap: wrap; }
+.size-btn { flex: 1 1 calc(50% - 5px); padding: 12px 8px; border-radius: 12px; border: 2px solid #e5e7eb; background: var(--white); cursor: pointer; text-align: center; transition: all .2s; font-family: 'Nunito', sans-serif; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .size-btn:hover { border-color: var(--blue); }
 .size-btn.selected { border-color: var(--blue); background: #EEF3FF; }
 .size-btn .size-icon { font-size: 24px; display: block; margin-bottom: 5px; }
@@ -214,6 +215,7 @@ footer { background: var(--dark); padding: 48px 5% 28px; }
 .footer-social { display: flex; gap: 10px; }
 .social-btn { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; font-size: 15px; color: white; text-decoration: none; transition: background .2s; touch-action: manipulation; }
 .social-btn:hover { background: var(--blue); }
+.social-btn img { width: 22px; height: 22px; object-fit: contain; display: block; }
 .footer-col-title { font-weight: 800; font-size: 12px; color: white; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; }
 .footer-links { list-style: none; }
 .footer-links li { margin-bottom: 10px; }
@@ -227,8 +229,9 @@ footer { background: var(--dark); padding: 48px 5% 28px; }
 .color-bar span:nth-child(3){background:var(--yellow);} .color-bar span:nth-child(4){background:var(--green);}
 
 /* ── WHATSAPP FLOAT ── */
-.whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 999; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,.45); text-decoration: none; font-size: 26px; animation: pulse 2.5s infinite; transition: transform .2s; touch-action: manipulation; }
+.whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 999; width: 56px; height: 56px; background: #95f8b9; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,.45); text-decoration: none; font-size: 26px; animation: pulse 2.5s infinite; transition: transform .2s; touch-action: manipulation; }
 .whatsapp-float:hover { transform: scale(1.1); }
+.whatsapp-float img { width: 34px; height: 34px; object-fit: contain; display: block; }
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: translateY(0); } }
