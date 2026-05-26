@@ -4,10 +4,14 @@ let modalCantidad=1, modalCurrentSizes=null, modalSelectedIdx=0;
 
 const PRODUCT_SIZES = {
   acrilica: [
-    {icon:'🥛', name:'¼ Galón', vol:'¼ galón', price:350, gallons:0.25, qtyLabel:'presentación(es)'},
-    {icon:'🫙', name:'½ Galón', vol:'½ galón', price:500, gallons:0.5, qtyLabel:'presentación(es)'},
     {icon:'🪣', name:'Galón', vol:'1 galón', price:750, gallons:1, qtyLabel:'galón(es)'},
     {icon:'🛢️', name:'Tarro', vol:'5 galones', price:3750, gallons:5, qtyLabel:'tarro(s)'},
+  ],
+  acrilicaSuperior: [
+    {icon:'🥛', name:'¼ Galón', vol:'¼ galón', price:350, gallons:0.25, qtyLabel:'presentación(es)'},
+    {icon:'🫙', name:'½ Galón', vol:'½ galón', price:500, gallons:0.5, qtyLabel:'presentación(es)'},
+    {icon:'🪣', name:'Galón', vol:'1 galón', price:950, gallons:1, qtyLabel:'galón(es)'},
+    {icon:'🛢️', name:'Tarro', vol:'5 galones', price:4750, gallons:5, qtyLabel:'tarro(s)'},
   ],
   semigloss: [
     {icon:'🥛', name:'¼ Galón', vol:'¼ galón', price:400, gallons:0.25, qtyLabel:'presentación(es)'},
